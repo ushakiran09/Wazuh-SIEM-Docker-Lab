@@ -1,0 +1,15 @@
+# CRITICAL: Ignores the actual data/logs created by Docker
+wazuh-docker/single-node/volumes/
+
+# Ignores local OS files and temp files
+.DS_Store
+*.log
+
+# Ignores large installer files
+*.msi
+
+# EXCLUDE FILES WITH PASSWORDS IF YOU DIDN'T USE PLACEHOLDERS
+# If you used a separate .env file for secrets, add it here:
+.env
+*.bak 
+*.orig
